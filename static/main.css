@@ -1,0 +1,234 @@
+:root {
+    --clr-orange: #FF9B01;
+    --clr-bgblue: #1A1B23;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* nav - title - section 1 - banner - section 2 - section 3*/
+    grid-template-rows: 80px 1fr 700px 300px 1fr 55px;
+}
+
+
+/*------------ Navigation ------------*/
+
+.navigation-container {
+    background-color: var(--clr-bgblue);
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.navigation-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.navigation-item {
+    align-self: center;
+    justify-self: center;
+}
+
+.navigation-container a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.navigation-container a:hover {
+    color: var(--clr-orange);
+}
+
+
+/*------------ Title ------------*/
+
+.title-container {
+    background-image: url("/static/foto/bg-title.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 270px 100px 100px;
+}
+
+.title {
+    margin-top: 150px;
+    align-self: center;
+    justify-self: center;
+}
+
+.title-desc {
+    font-size: 24px;
+    font-weight: 600;
+    width: 500px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.title-button {
+    align-self: center;
+    justify-self: center;
+    background-color: var(--clr-orange);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    width: 300px;
+    height: 80px;
+    margin-bottom: 100px;
+}
+
+.title-button:hover {
+    background-color: var(--clr-bgblue);
+}
+
+
+/*------------ information ------------*/
+
+.information-section-container {
+    background-color: var(--clr-bgblue);
+}
+
+.information-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.information-item {
+    margin: 100px 100px 100px 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.information-item:hover {
+    background-color: #121217;
+}
+
+.information-desc {
+    width: 100px;
+    height: 100px;
+}
+
+
+/*------------ Banner ------------*/
+
+.banner-section-container {
+    background-image: url("/static/foto/banner.png");
+    background-position: center;
+}
+
+
+/*------------ Events ------------*/
+
+.events-section-container {
+    background-color: #1A1B23;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px;
+}
+
+.event-header {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.event-items {
+    justify-self: center;
+    display: flex;
+    overflow-x: auto;
+}
+
+.event-item {
+    margin: 75px 15px 0px 15px;
+    min-width: 110px;
+    width: 380px;
+    height: 320px;
+    line-height: 110px;
+    text-align: center;
+    border: 10px solid #FF9B01;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.event-item-rl-bg {
+    background-image: url("/static/foto/event-rl-bg.png");
+    background-position: left;
+}
+
+.event-item-lol-bg {
+    background-image: url("/static/foto/event-lol-bg.png");
+    background-position: right;
+}
+
+.event-item-game {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 125px;
+    top: 23px;
+    background: #FF9B01;
+    border-radius: 15px;
+}
+
+.event-item-game-players {
+    float: left;
+    padding: 10px;
+}
+
+
+/*------------ Community ------------*/
+
+.community-section-container {
+    background-color: #292A37;
+}
+
+.community-items {
+    padding-top: 18px;
+    display: grid;
+    grid-template-columns: 1fr 100px 100px 100px 1fr;
+}
+
+.community-item {
+    align-self: center;
+    justify-self: center;
+    color: grey;
+    font-weight: 700;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.community-item:hover {
+    color: var(--clr-orange);
+}
