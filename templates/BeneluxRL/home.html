@@ -1,89 +1,76 @@
 {% extends 'BeneluxRL/base.html' %}
 {% load static %}
 {% block content %}
+    <div class="title-container">
+        <img class="title" src="{% static 'foto/title.png' %}"><img>
+        <div class="title-desc">
+            <a>Welkom bij onze gaming community Ontmoet nieuwe mensen en nieuwe kansen</a>
+        </div>
+        <button class="title-button">Join Vandaag</button>
+    </div>
 
-        <div class="navigation-container">
-            <img class="logo" src="{% static 'foto/logo.png' %}"></img>
-            <div class="navigation-items">
-                <a href="#" class="navigation-item">Home</a>
-                <a href="#" class="navigation-item">Over ons</a>
-                <a href="#" class="navigation-item">RL</a>
-                <a href="#" class="navigation-item">LoL</a>
-                <a href="#" class="navigation-item">Agenda</a>
-                <a href="#" class="navigation-item">Contact</a>
+    <div class="information-section-container">
+        <div class="information-items">
+            <div class="information-item">
+                <img class="information-icon" src="{% static 'icons/icon-headset.png' %}">
+                <h1 class="information-header">
+                    Online Community
+                </h1>
+                <a class="information-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis tristique orci, sagittis
+                    tincidunt.
+                </a>
+            </div>
+            <div class="information-item">
+                <img class="information-icon" src="{% static 'icons/icon-news.png' %}">
+                <h1 class="information-header">
+                    Doelen
+                </h1>
+                <a class="information-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis tristique orci, sagittis
+                    tincidunt.
+                </a>
+            </div>
+            <div class="information-item">
+                <img class="information-icon" src="{% static 'icons/icon-leader.png' %}">
+                <h1 class="information-header">
+                    Online Events
+                </h1>
+                <a class="information-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis tristique orci, sagittis
+                    tincidunt.
+                </a>
             </div>
         </div>
+    </div>
+    <div class="banner-section-container">
+    </div>
 
-        <div class="title-container">
-            <img class="title" src="{% static 'foto/title.png' %}"><img>
-            <div class="title-desc">
-                <a>Welkom bij onze gaming community Ontmoet nieuwe mensen en nieuwe kansen</a>
+    <div class="events-section-container">
+        <h1 class="event-header">Upcoming Events</h1>
+        <div class="event-items">
+            <div class="event-item event-item-rl-bg">
+                <a class="event-item-game"></a>
+                <a class="event-item-game-players"></a>
+                <a class="event-item-date"></a>
+                <h1 class="event-item-header"></h1>
             </div>
-            <button class="title-button">Join Vandaag</button>
-
+            <div class="event-item event-item-rl-bg"></div>
+            <div class="event-item event-item-lol-bg"></div>
         </div>
 
-        <div class="information-section-container">
-            <div class="information-items">
-                <div class="information-item">
-                    <img class="information-icon" src="{% static 'icons/icon-headset.png' %}">
-                    <h1 class="information-header">
-                        Online Community
-                    </h1>
-                    <a class="information-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis tristique orci, sagittis tincidunt.
-                    </a>
-                </div>
-                <div class="information-item">
-                    <img class="information-icon" src="{% static 'icons/icon-news.png' %}">
-                    <h1 class="information-header">
-                        Doelen
-                    </h1>
-                    <a class="information-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis tristique orci, sagittis tincidunt.
-                    </a>
-                </div>
-                <div class="information-item">
-                    <img class="information-icon" src="{% static 'icons/icon-leader.png' %}">
-                    <h1 class="information-header">
-                        Online Events
-                    </h1>
-                    <a class="information-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis tristique orci, sagittis tincidunt.
-                    </a>
-                </div>
-            </div>
+    </div>
 
+    <div class="community-section-container">
+        <div class="community-items">
+            <a class="community-item"></a>
+            <a class="community-item">Info</a>
+            <a class="community-item">Terms</a>
+            <a class="community-item">Privacy</a>
+            <a class="community-item"></a>
         </div>
-
-        <div class="banner-section-container">
-        </div>
-
-        <div class="events-section-container">
-            <h1 class="event-header">Upcoming Events</h1>
-            <div class="event-items">
-                <div class="event-item event-item-rl-bg">
-                    <a class="event-item-game"></a>
-                    <a class="event-item-game-players"></a>
-                    <a class="event-item-date"></a>
-                    <h1 class="event-item-header"></h1>
-                </div>
-                <div class="event-item event-item-rl-bg"></div>
-                <div class="event-item event-item-lol-bg"></div>
-            </div>
-
-        </div>
-
-        <div class="community-section-container">
-            <div class="community-items">
-                <a class="community-item"></a>
-                <a class="community-item">Info</a>
-                <a class="community-item">Terms</a>
-                <a class="community-item">Privacy</a>
-                <a class="community-item"></a>
-            </div>
-        </div>
+    </div>
 
 
-</body>
- {% endblock %}
+    </body>
+{% endblock %}
