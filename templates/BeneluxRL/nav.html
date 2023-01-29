@@ -1,9 +1,9 @@
 {% load static %}
 <div class="navigation-container">
-            <a href="{% url 'home' %}"> <img class="logo" src="{% static 'foto/logo.png' %}" ></img></a>
+            <a href="{% url 'home' %}"> <img class="logo" src="{% static 'foto/logo.png' %}" ></a>
             <div class="navigation-items">
                 <a href="{% url 'home' %}" class="navigation-item">Home</a>
-                <a href="#" class="navigation-item">Over ons</a>
+                <a href="{% url 'over_ons' %}" class="navigation-item">Over ons</a>
                 <a href="{% url 'RLhome' %}" class="navigation-item">RL</a>
                 <a href="#" class="navigation-item">LoL</a>
                 <a href="#" class="navigation-item">Agenda</a>
