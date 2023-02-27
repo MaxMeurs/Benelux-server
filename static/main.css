@@ -232,3 +232,62 @@ body {
 .community-item:hover {
     color: var(--clr-orange);
 }
+
+.button-rgb {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rgb-border {
+    background: #020024;
+    background: linear-gradient(155deg, #020024 0%, red 8%, #e446ea 12%, #0f88ec 24%, #00ff08 36%, #00e4ff 48%, #0005ff 60%, #fe00e7 72%, red 84%, #ffa200 96%);
+    width: 11em;
+    height: 4em;
+    margin: 1em;
+    position: relative;
+    animation: gradient 55s linear infinite;
+}
+
+.rgb-border::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(4px);
+}
+
+.rgb-border .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #1f1f1f 74%);
+    width: 7.8em;
+    height: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.1em;
+    color: #fff;
+    Font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 18.75em 31.25em;
+    }
+    100% {
+        background-position: 0.1em 0.1em;
+    }
+}
