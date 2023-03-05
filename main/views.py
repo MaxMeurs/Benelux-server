@@ -8,3 +8,7 @@ def home(request):
 
 def over_ons(request):
     return render(request, 'BeneluxRL/over-ons.html')
+
+
+def contact(request):
+    return render(request, 'BeneluxRL/contact.html')
